@@ -4,6 +4,8 @@ from encode import encode_data
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
+from matplotlib import pyplot as plt
+import seaborn as sns
 
 
 # Read the Data_set
@@ -64,3 +66,8 @@ y_pred = lr.predict(X_test)
 # CHECK THE ACCURACY
 score = r2_score(Y_test,y_pred)
 print(score)
+
+
+# CHECK THE BEST FIT LINE IF POSSIBLE
+plt.figure(figsize=(12,12))
+sns.scatterplot()
